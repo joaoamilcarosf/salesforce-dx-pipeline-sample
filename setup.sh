@@ -71,9 +71,9 @@ heroku config:set STAGE=STAGING -a $HEROKU_STAGING_APP_NAME
 heroku config:set STAGE=PROD -a $HEROKU_PROD_APP_NAME
 
 # Set whether or not to use DCP packaging
-heroku config:set SFDX_INSTALL_PACKAGE_VERSION=true -a $HEROKU_DEV_APP_NAME
-heroku config:set SFDX_INSTALL_PACKAGE_VERSION=true -a $HEROKU_STAGING_APP_NAME
-heroku config:set SFDX_INSTALL_PACKAGE_VERSION=true -a $HEROKU_PROD_APP_NAME
+heroku config:set SFDX_INSTALL_PACKAGE_VERSION=false -a $HEROKU_DEV_APP_NAME
+heroku config:set SFDX_INSTALL_PACKAGE_VERSION=false -a $HEROKU_STAGING_APP_NAME
+heroku config:set SFDX_INSTALL_PACKAGE_VERSION=false -a $HEROKU_PROD_APP_NAME
 
 # Set whether to create package version
 heroku config:set SFDX_CREATE_PACKAGE_VERSION=true -a $HEROKU_DEV_APP_NAME
